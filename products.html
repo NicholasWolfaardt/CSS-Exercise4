@@ -4,15 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 </head>
 <header><h1>Browse the Store</h1></header>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <nav class="navbar sm:navbar-expand bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Home</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./products.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
   <main>
     <div>
       <img src="https://m.media-amazon.com/images/I/71amTCrzOdL._AC_SX679_.jpg" alt="Ghast Headphones">
@@ -63,6 +85,16 @@
       <button>Add to Cart</button>
     </div>
   </main>
-  <footer>This website is created by Nicholas Wolfaardt</footer>
+  <footer>
+    <div class="card">
+      <div class="card-header">
+        Webiste Credits
+      </div>
+      <div class="card-body">
+        <p>This website was created by <b>Nicholas Wolfaardt</b></p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
 </html>
