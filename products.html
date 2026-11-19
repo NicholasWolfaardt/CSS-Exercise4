@@ -1,100 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-</head>
-<header><h1>Browse the Store</h1></header>
-<body>
-  <nav class="navbar sm:navbar-expand bg-1 fg-2">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">Home</a>
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-      <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <header><h1>Browse the Store</h1></header>
+  <body>
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarNav"
+          aria-labelledby="navbarNavLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./products.html"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
       </div>
-      <div class="drawer-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./products.html">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
+    </nav>
+    <main>
+      <div class="grid text-center grid-auto-flow-row" style="--bs-columns: 3">
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://m.media-amazon.com/images/I/71amTCrzOdL._AC_SX679_.jpg"
+            class="card-img-top object-fit"
+            alt="Ghast Headphones"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Ghast Headphones</h4>
+            <p class="card-text">R 3999</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://m.media-amazon.com/images/I/61l1VOHokOL._AC_SX679_.jpg"
+            class="card-img-top"
+            alt="Yellow Wolverine PS5 Dualsense"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Yellow Wolverine PS5 Dualsense</h4>
+            <p class="card-text">R 1499</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://www.stormforcegaming.co.uk/wp-content/uploads/2026/05/Mouse-block-1000x1000.webp"
+            class="card-img-top"
+            alt="Razer Black Gaming Mouse"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Razer Black Gaming Mouse</h4>
+            <p class="card-text">R 397</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://sonyworld.co.za/cdn/shop/files/ACCESS_SA_RNDR_FT_RGB_MEA_231002.jpg?"
+            class="card-img-top"
+            alt="Playstation 5 Access Controller"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Playstation 5 Access Controller</h4>
+            <p class="card-text">R 999</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://www.mhcworld.co.za/cdn/shop/files/transparent-Photoroom_21_7f615aef-4e55-4465-916c-a359e4e29214.jpg?"
+            class="card-img-top"
+            alt="Logitech G920/G29 Driving Force Steering Wheel and Pedals"
+          />
+          <div class="card-body">
+            <h4 class="card-title">
+              Logitech G920/G29 Driving Force Steering Wheel and Pedals
+            </h4>
+            <p class="card-text">R 6099</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://backbone.com/cdn/shop/files/backbone_pro_carousel_1_ab9abf9b-48da-4f9a-83d6-ae8e7ba833e6.png?v=1784917416&width=1200"
+            class="card-img-top"
+            alt="Backbone Pro Mobile Gaming"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Backbone Pro Mobile Gaming</h4>
+            <p class="card-text">R 2786</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Black_and_white_Playstation_5_base_edition_with_controller.png/500px-Black_and_white_Playstation_5_base_edition_with_controller.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+            class="card-img-top"
+            alt="Playstation 5"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Playstation 5</h4>
+            <p class="card-text">R 19500</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
+        <section
+          class="card animate__animated animate__fadeIn"
+          style="max-width: 320px"
+        >
+          <img
+            src="https://www.syntech.co.za/wp-content/uploads/2026/01/MAG-342CQRF-E20_MSI-MAG-342CQRF-E20-34-inch-UWQHD-200Hz-VA-Curved-Gaming-Monitor-Black_wr_01a-1024x1024.jpg"
+            class="card-img-top"
+            alt="Gaming Monitor"
+          />
+          <div class="card-body">
+            <h4 h4 class="card-title">Gaming Monitor</h4>
+            <p class="card-text">R 10000</p>
+            <a href="" class="btn-solid theme-success w-100">Add to Cart</a>
+          </div>
+        </section>
       </div>
-    </dialog>
-  </div>
-</nav>
-  <main>
-    <div>
-      <img src="https://m.media-amazon.com/images/I/71amTCrzOdL._AC_SX679_.jpg" alt="Ghast Headphones">
-      <p><label>Ghast Headphones</label></p>
-      <p><label>R 3999</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://m.media-amazon.com/images/I/61l1VOHokOL._AC_SX679_.jpg" alt="Yellow Wolverine PS5 Dualsense">
-      <p><label>Yellow Wolverine PS5 Dualsense</label></p>
-      <p><label>R 1499</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://www.stormforcegaming.co.uk/wp-content/uploads/2026/05/Mouse-block-1000x1000.webp" alt="Razer Black Gaming Mouse">
-      <p><label>Razer Black Gaming Mouse</label></p>
-      <p><label>R 397</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://sonyworld.co.za/cdn/shop/files/ACCESS_SA_RNDR_FT_RGB_MEA_231002.jpg?" alt="Playstation 5 Access Controller">
-      <p><label>Playstation 5 Access Controller</label></p>
-      <p><label>R 999</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://www.mhcworld.co.za/cdn/shop/files/transparent-Photoroom_21_7f615aef-4e55-4465-916c-a359e4e29214.jpg?" alt="Logitech G920/G29 Driving Force Steering Wheel and Pedals">
-      <p><label>Logitech G920/G29 Driving Force Steering Wheel and Pedals</label></p>
-      <p><label>R 6099</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://backbone.com/cdn/shop/files/backbone_pro_carousel_1_ab9abf9b-48da-4f9a-83d6-ae8e7ba833e6.png?v=1784917416&width=1200" alt="Backbone Pro Mobile Gaming">
-      <p><label>Backbone Pro Mobile Gaming</label></p>
-      <p><label>R 2786</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Black_and_white_Playstation_5_base_edition_with_controller.png/500px-Black_and_white_Playstation_5_base_edition_with_controller.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Playstation 5">
-      <p><label>Playstation 5</label></p>
-      <p><label>R 19500</label></p>
-      <button>Add to Cart</button>
-    </div>
-    <div>
-      <img src="https://www.syntech.co.za/wp-content/uploads/2026/01/MAG-342CQRF-E20_MSI-MAG-342CQRF-E20-34-inch-UWQHD-200Hz-VA-Curved-Gaming-Monitor-Black_wr_01a-1024x1024.jpg">
-      <p><label>Gaming Monitor</label></p>
-      <p><label>R 10000</label></p>
-      <button>Add to Cart</button>
-    </div>
-  </main>
-  <footer>
-    <div class="card">
-      <div class="card-header">
-        Webiste Credits
+    </main>
+    <footer>
+      <div class="card">
+        <div class="card-header">Webiste Credits</div>
+        <div class="card-body">
+          <p>This website was created by <b>Nicholas Wolfaardt</b></p>
+        </div>
       </div>
-      <div class="card-body">
-        <p>This website was created by <b>Nicholas Wolfaardt</b></p>
-      </div>
-    </div>
-  </footer>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-</body>
+    </footer>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

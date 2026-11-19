@@ -1,77 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-</head>
-<body>
-  <header><h1>Learn about me</h1></header>
-  <nav class="navbar sm:navbar-expand bg-1 fg-2">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">Home</a>
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-      <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header><h1>Learn about me</h1></header>
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarNav"
+          aria-labelledby="navbarNavLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./products.html"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
       </div>
-      <div class="drawer-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./products.html">Shop</a>
+    </nav>
+    <main>
+      <section>
+        <h2>Our Story</h2>
+        <p>
+          The Gaming Store started with a simple frustration: finding good
+          gaming gear in South Africa meant endless shipping delays and prices
+          that made no sense. So we built a store that stocks the stuff players
+          actually want — controllers, headsets, wheels and mobile gear — at
+          prices in rands, shipped locally.
+        </p>
+      </section>
+
+      <section>
+        <h2>What We Stock</h2>
+        <ul>
+          <li>
+            <strong>Controllers</strong> — DualSense, Access Controller and
+            third-party pads.
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
+          <li>
+            <strong>Audio</strong> — headsets built for long sessions and
+            late-night raids.
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+          <li><strong>Racing</strong> — wheels and pedals for sim racers.</li>
+          <li>
+            <strong>Mobile</strong> — clips and controllers that turn your phone
+            into a handheld.
           </li>
         </ul>
-      </div>
-    </dialog>
-  </div>
-</nav>
-<main>
-    <section>
-      <h2>Our Story</h2>
-      <p>The Gaming Store started with a simple frustration: finding good gaming gear in South Africa meant
-        endless shipping delays and prices that made no sense. So we built a store that stocks the stuff
-        players actually want — controllers, headsets, wheels and mobile gear — at prices in rands, shipped locally.</p>
-    </section>
+      </section>
 
-    <section>
-      <h2>What We Stock</h2>
-      <ul>
-        <li><strong>Controllers</strong> — DualSense, Access Controller and third-party pads.</li>
-        <li><strong>Audio</strong> — headsets built for long sessions and late-night raids.</li>
-        <li><strong>Racing</strong> — wheels and pedals for sim racers.</li>
-        <li><strong>Mobile</strong> — clips and controllers that turn your phone into a handheld.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Why Shop With Us</h2>
-      <ul>
-        <li>Local stock, no import surprises.</li>
-        <li>Prices listed in rands, with no hidden fees.</li>
-        <li>Real people answering your questions.</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <div class="card">
-      <div class="card-header">
-        Webiste Credits
+      <section>
+        <h2>Why Shop With Us</h2>
+        <ul>
+          <li>Local stock, no import surprises.</li>
+          <li>Prices listed in rands, with no hidden fees.</li>
+          <li>Real people answering your questions.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="card">
+        <div class="card-header">Webiste Credits</div>
+        <div class="card-body">
+          <p>This website was created by <b>Nicholas Wolfaardt</b></p>
+        </div>
       </div>
-      <div class="card-body">
-        <p>This website was created by <b>Nicholas Wolfaardt</b></p>
-      </div>
-    </div>
-  </footer>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-</body>
+    </footer>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
